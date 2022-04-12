@@ -3,6 +3,7 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import { Link } from '@mui/material'
+import { Link as RouterLink } from 'react-router-dom'
 
 import './announcementCard.scss'
 
@@ -79,7 +80,12 @@ const AnnouncementCard: React.FC<IAnnouncementCardProps> = ({
             padding: '16px',
           }}
         >
-          <Link href={`/announcement-ts/${announcement.id}`}>Details</Link>
+          <Link
+            component={RouterLink}
+            to={`/announcement-ts/${announcement.id}`}
+          >
+            Details
+          </Link>
         </CardActions>
       </Card>
     </li>
