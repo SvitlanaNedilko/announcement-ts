@@ -79,7 +79,7 @@ const AnnouncementCard: React.FC<IAnnouncementCardProps> = ({
             padding: '16px',
           }}
         >
-          <Link href={`announcement-ts/${announcement.id}`}>Details</Link>
+          <Link href={`/announcement-ts/${announcement.id}`}>Details</Link>
         </CardActions>
       </Card>
     </li>
