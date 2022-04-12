@@ -1,0 +1,26 @@
+.announcements-list {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 16px;
+  padding: 0;
+}
+
+.search-container {
+  
+  border-bottom: 1px solid #eaeaea;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+ 
+  .searching-result {
+    font-weight: 600;
+    // font-size: 16px;
+    // line-height: 20px;
+  }
+}
