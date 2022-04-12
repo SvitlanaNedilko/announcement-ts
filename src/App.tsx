@@ -13,7 +13,7 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route element={<AnnouncementPage />} path="announcement-ts/:id" />
+            <Route element={<AnnouncementPage />} path="/announcement-ts/:id" />
             <Route
               element={<AnnouncementsListPage />}
               path="/announcement-ts/"
